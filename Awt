@@ -1,0 +1,20 @@
+화면 구성(Layout)
+ - 개별 기능 Component나 Panel을 사용해 화면 구성한다
+ - window 계열은 기본 배치 관리자가 BorderLayout
+ 								구성요소 (동, 서, 남, 북 중앙에 배치한다)
+ 								특별한 위치 지정이 없으면 무조건 중앙에 배치
+ 								있으면 덮어쓴다
+ - panel 계열은 기본 배치 관리자가 FlowLayout
+
+
+작업 윈도우를 만드는 절차
+1. frame 을 상속받아 구성요소 추가하는 방법 (권장)
+2. 작업영역에 여러 구성요소를 배치한다 - Layout
+3. 각 구성 요소에 대한 이벤트 핸들러를 작성한다.
+
+xxxListener 객체는 다 인터페이스 객체 - 재정의 해줘야함
+내부에 1~여러개의 메서드를 가지고 있다.
+xxxAdapter 는 클래스, 인터페이스의 추상 method 를 구현한다.
+
+window 이벤트 처리 addWindowListener()
+button 이벤트 처리 addActionListener()
